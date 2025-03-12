@@ -15,7 +15,8 @@ pipeline {
             steps {
                 script {
                     echo "Running tests..."
-                    sh "./main/hello_exec"
+                    // Intentional error: Trying to execute a non-existent file
+                    sh "./main/non_existent_exec"
                 }
             }
         }
